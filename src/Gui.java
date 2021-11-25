@@ -3,13 +3,18 @@ import java.awt.event.*;
 import javax.swing.*;
 
 
-public class Gui {
+public class Gui extends JFrame {
+    private JPanel content;
+    Gui(JPanel panel){
+        super("Gannonopoly");
+
+        this.content = panel;
+        setSize(900, 700);
+        setVisible(true);
+    }
     public static void main(String args[]){
-        JFrame mainFrame = new JFrame("My First GUI");
-        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        mainFrame.setSize(900, 700);
+       Gui main = new Gui(new JPanel());
 
 
-        mainFrame.setVisible(true);
     }
 }
