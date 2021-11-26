@@ -10,7 +10,7 @@ public class StartPanel extends JPanel{
 
     StartPanel(){
         setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
-        add(startButton, BoxLayout.CENTER);
+        add(startButton);
         add(instructions);
         setSize(900, 700);
     }
